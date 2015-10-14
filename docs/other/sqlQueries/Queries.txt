@@ -1,0 +1,91 @@
+select * from internationalcourts;
+
+
+update softlaws set slorg1_spa='Subcomité para la Prevención de la Tortura' where SLawId = 12
+
+
+update softlaws set slorg1_spa='Consejo de Seguridad de las Naciones Unidos',slorg2_spa='Consejo de Seguridad de la ONU' where SLawId = 15
+
+
+show tables
+
+
+select * from softlaws
+
+
+use courtdata
+
+
+
+update internationalcourts set ICourtName_SPA1='Organo de Apelación de la OMC',ICourtName_SPA2='' where ICourtId = 35
+
+
+
+alter table softlaws add column STitlePattern_spa varchar(250)
+
+
+
+update softlaws set STitlePattern_spa='(()|())' where SLawId = 29
+
+
+
+update softlaws set STitlePattern_spa='()' where SLawId = 37
+
+SET SQL_SAFE_UPDATES = 0;
+
+create table nitin_dummy(TID int(30),Title1_spa varchar(250),Title2_spa varchar(250),Title3_spa varchar(250),primary key(TID))
+
+drop table nitin_dummy
+
+
+mysqldump -u root -p courtdata > C:\Users\dell\Desktop\courtv4.sql
+
+mysqldump -u root -p courtdata < C:\Users\dell\Desktop\courtv4.sql
+
+
+
+create database xyz
+
+use xyz
+
+
+use courtdata
+
+show tables
+alter table softlaws add column slterm3_spa varchar(1000)
+
+select  * from softlaws
+
+create table dummyic (IcourtId int,IcourtName_Fre1 varchar(1000),IcourtName_Fre2 varchar(1000),Primary key(IcourtId))
+
+select *count(*) from treaties
+dummy 
+desc countrydetails
+
+insert into countrydetails (CountryId,CountryName,country1_spa,country2_spa,country3_spa_official,country_adj_spa,country_adj_spa2)
+values ('209','Myanmiar|Burma|Burmese','','','','','')
+
+update softlaws set slterm1='Resolution',slterm1_spa='Resolución' where SLawId = 15
+
+select * from treaties
+
+select * from countrydetails
+
+select * from internationalcourts 
+
+drop table nitin_dummy
+
+
+ALTER TABLE countrydetails 
+MODIFY CountryName VARCHAR(250)
+
+create table nitin_dummy( int(30),country1_spa varchar(250),country2_spa varchar(250),country3_spa_official varchar(250),country_adj_spa varchar(250),country_adj_spa2 varchar(250),court_spa1 varchar(250),court_spa2 varchar(250),primary key(TID))
+
+
+create table countryDummies (countryid int(30), country1_spa varchar(1000),country2_spa varchar(1000)
+,country3_spa_official varchar(1000),country_adj_spa varchar(1000),country_adj_spa2 varchar(1000))
+
+drop table countrydummies
+
+
+select * from countryDummies
